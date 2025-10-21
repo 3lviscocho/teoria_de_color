@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teoría del Color en Programación Web 🎨</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2196f3, #e91e63);
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      text-align: center;
+      margin: 0.5rem 0 2rem 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .color-sample {
+      height: 120px;
+    }
+
+    .info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .info h2 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .info p {
+      margin: 0.3rem 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      background-color: #222;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎨 Teoría del Color en Programación Web</h1>
+    <p>Visualiza cómo los colores se aplican con HTML y CSS usando distintos modelos y armonías.</p>
+  </header>
+
+  <section class="container">
+
+    <!-- RGB -->
+    <div class="card">
+      <div class="color-sample" style="background-color: rgb(255, 99, 71);"></div>
+      <div class="info">
+        <h2>Modelo RGB</h2>
+        <p><b>rgb(255, 99, 71)</b> → combina Rojo, Verde y Azul.</p>
+        <p>Usado en pantallas digitales, donde cada color se forma con luz.</p>
+      </div>
+    </div>
+
+    <!-- HEX -->
+    <div class="card">
+      <div class="color-sample" style="background-color: #4CAF50;"></div>
+      <div class="info">
+        <h2>Modelo HEX</h2>
+        <p><b>#4CAF50</b> → código hexadecimal del color verde.</p>
+        <p>Formato más usado en CSS por su simplicidad.</p>
+      </div>
+    </div>
+
+    <!-- HSL -->
+    <div class="card">
+      <div class="color-sample" style="background-color: hsl(200, 80%, 50%);"></div>
+      <div class="info">
+        <h2>Modelo HSL</h2>
+        <p><b>hsl(200, 80%, 50%)</b> → tono, saturación y luminosidad.</p>
+        <p>Ideal para modificar colores con más control.</p>
+      </div>
+    </div>
+
+    <!-- Complementarios -->
+    <div class="card">
+      <div class="color-sample" style="background: linear-gradient(90deg, #ff5722 50%, #2196f3 50%);"></div>
+      <div class="info">
+        <h2>Colores Complementarios</h2>
+        <p>Ejemplo: <b>Naranja (#ff5722)</b> y <b>Azul (#2196f3)</b>.</p>
+        <p>Opuestos en la rueda cromática, crean alto contraste.</p>
+      </div>
+    </div>
+
+    <!-- Análogos -->
+    <div class="card">
+      <div class="color-sample" style="background: linear-gradient(90deg, #ff9800 33%, #ffc107 33%, #ffeb3b 33%);"></div>
+      <div class="info">
+        <h2>Colores Análogos</h2>
+        <p>Ejemplo: <b>Naranja</b>, <b>Ámbar</b>, <b>Amarillo</b>.</p>
+        <p>Colores vecinos en la rueda cromática, generan armonía.</p>
+      </div>
+    </div>
+
+    <!-- Triádicos -->
+    <div class="card">
+      <div class="color-sample" style="background: linear-gradient(90deg, #e91e63 33%, #2196f3 33%, #4caf50 33%);"></div>
+      <div class="info">
+        <h2>Colores Triádicos</h2>
+        <p>Ejemplo: <b>Rosa</b>, <b>Azul</b>, <b>Verde</b>.</p>
+        <p>Colores equidistantes en la rueda cromática, equilibrados y vibrantes.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>💡 Proyecto educativo – Teoría del Color en Programación Web (HTML + CSS)</p>
+  </footer>
+
+</body>
+</html>
